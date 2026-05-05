@@ -1,0 +1,439 @@
+.navbar {
+    display: flex;             /* تفعيل وضع المرونة */
+    justify-content: space-between; /* اللوجو في أقصى الشمال واللينكات في أقصى اليمين */
+    align-items: center;       /* سنترة العناصر رأسياً */
+    padding: 15px 40px;        /* مسافة من الأطراف */
+    background-color: #1a1a1a; /* أسود ملكي */
+    border-bottom: 3px solid #D4AF37; /* خط ذهبي فخم من تحت */
+}
+
+/* كلمة اللوجو */
+.logo {
+    color: #D4AF37;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    order:1;
+}
+
+/* حاوية اللينكات اللي على اليمين */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* مسافة بين back و book now */
+}
+
+/* كلمة back */
+.back-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    order:2;
+}
+
+.back-link:hover {
+    color: #D4AF37;
+    
+}
+
+/* زرار Book Now المتميز */
+.book-now {
+    background: linear-gradient(45deg, #D4AF37, #F9D71C);
+    color: #000;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px 0px #fff;
+    transition: 0.3s;
+}
+
+.book-now:hover {
+    transform: scale(1.05);
+    box-shadow: none;
+    background: #fff;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between; /* اللوجو شمال واللينكات يمين خالص */
+    align-items: center;
+    padding: 10px 5%;
+    background-color: rgba(26, 26, 26, 0.98);
+    border-bottom: 3px solid #D4AF37; /* خط ذهبي */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    color: #D4AF37;
+    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: #D4AF37;
+}
+
+/* زرار Book Now */
+.book-now {
+    background: linear-gradient(45deg, #D4AF37, #F9D71C);
+    color: #000 !important;
+    padding: 8px 18px;
+    border-radius: 50px; /* شكل بيضاوي شيك */
+    font-size: 0.9rem;
+}
+
+/* إعدادات عامة */
+:root {
+    --gold: #d4af37;
+    --dark-gold: #aa891a;
+    --black: #0f0f0f;
+    --soft-black: #1a1a1a;
+    --white: #ffffff;
+    --light-gray: #e0e0e0;
+    --cairo-font: 'Cairo', sans-serif;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans Arabic', var(--cairo-font);
+    background-color: var(--black);
+    color: var(--white);
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+/* زر الرجوع - تصميم عائم وأنيق */
+.back-btn {
+    padding: 30px 5%;
+}
+
+.back-btn a {
+    text-decoration: none;
+    color: var(--gold);
+    font-weight: 600;
+    border: 1.5px solid var(--gold);
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.back-btn a:hover {
+    background-color: var(--gold);
+    color: var(--black);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    transform: translateX(-5px); /* حركة خفيفة لجهة اليمين/اليسار حسب الاتجاه */
+}
+
+/* العنوان الرئيسي - تأثير ذهبي متدرج */
+.content {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.content h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem); /* حجم خط مرن */
+    background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa891a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+/* قسم الصورة - إطار مضيء */
+.backround {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    position: relative;
+}
+
+.backround img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.8s ease;
+}
+
+.backround:hover img {
+    transform: scale(1.1);
+}
+
+/* الوصف النصي - خلفية زجاجية (Glassmorphism) */
+.description {
+    width: 85%;
+    max-width: 850px;
+    margin: -50px auto 40px; /* تداخل بسيط مع الصورة لإعطاء عمق */
+    position: relative;
+    z-index: 2;
+    background: rgba(26, 26, 26, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-top: 3px solid var(--gold);
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.description p {
+    font-size: 1.25rem;
+    color: var(--light-gray);
+    text-align: justify;
+    direction: rtl;
+}
+
+/* قسم الفيديو */
+.ber {
+    width: 90%;
+    max-width: 900px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.ber p {
+    font-size: 1.8rem;
+    color: var(--gold);
+    margin-bottom: 30px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+/* خط تحت كلمة الفيديو */
+.ber p::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background: var(--gold);
+}
+
+.ber video {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #333;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
+}
+
+/* زر الحجز - تأثير النبض */
+.custom-btn {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.custom-btn button {
+    background: linear-gradient(45deg, var(--dark-gold), #fcf6ba);
+    color: var(--black);
+    border: none;
+    padding: 18px 50px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: var(--transition);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    font-family: var(--cairo-font);
+    text-transform: uppercase;
+}
+
+.custom-btn button:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
+    filter: brightness(1.1);
+}
+
+/* تحسين التجاوب مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .description {
+        width: 92%;
+        margin-top: 20px;
+        padding: 25px;
+    }
+    
+    .description p {
+        font-size: 1.1rem;
+    }
+
+    .custom-btn button {
+        width: 80%;
+        padding: 15px 20px;
+    }
+}
+footer {
+    margin-top: 100px;
+    padding: 40px;
+    border-top: 1px solid #f5c61d;
+    text-align: center;
+    color: var(--gold);
+}
+.book-now {
+    position: relative;
+    overflow: hidden;
+}
+
+.book-now::after {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s;
+    pointer-events: none;
+}
+
+.book-now:hover::after {
+    transform: translate(-50%, -50%) scale(2);
+}
+/* تأثير الاختفاء والظهور */
+.element-hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1);
+}
+
+.element-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* الماوس المخصص */
+.custom-cursor {
+    width: 15px; height: 15px;
+    border: 2px solid #D4AF37;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference; /* بيخلي الماوس لونه يتغير حسب الخلفية */
+    transition: transform 0.2s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.cursor-active {
+    width: 45px; height: 45px;
+    background: rgba(212, 175, 55, 0.1);
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* ستايل شاشة التحميل */
+#preloader {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: #000; display: flex; justify-content: center; align-items: center;
+    z-index: 10000; transition: opacity 0.6s ease;
+}
+
+.gold-spinner {
+    width: 40px; height: 40px;
+    border: 3px solid #1a1a1a;
+    border-top: 3px solid #D4AF37;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+/* تنسيق زرار التحويل */
+.theme-btn {
+    background: none;
+    border: 1.5px solid #D4AF37; /* متناسق مع لون اللوجو والخطوط */
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px 8px;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D4AF37;
+    outline: none;
+}
+
+.theme-btn:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+    transform: scale(1.1) rotate(15deg);
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+/* إعدادات الـ Light Mode الإجبارية لجميع العناصر */
+/* تنسيق الـ Navbar الأساسي */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* تقليل البادنج شوية عشان الزحمة */
+    height: 70px; /* تثبيت الارتفاع عشان ميفلتش */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* تقليل المسافة بين العناصر */
+}
+
+/* تنسيق الزرار عشان ميبوظش الارتفاع */
+/* هذه الألوان ستطبق فور إضافة كلاس light-mode للجسم */
+body.light-mode {
+    background-color: #e9e5e5e4 !important;
+    background-image: none !important;
+    color: #1a1a1a83 !important;
+}
+
+body.light-mode .navbar {
+    background-color: #ffffff !important;
+    border-bottom: 2px solid #d4af37 !important;
+}
+
+body.light-mode .nav-links a, 
+body.light-mode .logo, 
+body.light-mode h1, 
+body.light-mode p, 
+body.light-mode .description,
+body.light-mode legend {
+    color: #1a1a1a !important;
+}
+
+body.light-mode fieldset, 
+body.light-mode main, 
+body.light-mode .photo-card {
+    background-color: #ffffff !important;
+    border-color: #d4af37 !important;
+}

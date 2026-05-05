@@ -1,0 +1,343 @@
+/* التنسيقات العامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0c0c0c; /* أسود فاخر */
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/photo1\ \(3\).jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* شريط التنقل - Navbar */
+.navbar {
+    display: flex;             /* تفعيل وضع المرونة */
+    justify-content: space-between; /* اللوجو في أقصى الشمال واللينكات في أقصى اليمين */
+    align-items: center;       /* سنترة العناصر رأسياً */
+    padding: 15px 40px;        /* مسافة من الأطراف */
+    background-color: #1a1a1a; /* أسود ملكي */
+    border-bottom: 3px solid #D4AF37; /* خط ذهبي فخم من تحت */
+}
+
+/* كلمة اللوجو */
+.logo {
+    color: #D4AF37;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* حاوية اللينكات اللي على اليمين */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* مسافة بين back و book now */
+}
+
+/* كلمة back */
+.back-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #D4AF37;
+}
+
+/* زرار Book Now المتميز */
+.book-now {
+    background: linear-gradient(45deg, #D4AF37, #F9D71C);
+    color: #000;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px 0px #fff;
+    transition: 0.3s;
+}
+
+.book-now:hover {
+    transform: scale(1.05);
+    box-shadow: none;
+    background: #fff;
+}
+/* 1. الإعدادات الأساسية للجسم */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* خلفية سوداء ملكية */
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* 2. شريط التنقل (Taskbar) */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* اللوجو شمال واللينكات يمين خالص */
+    align-items: center;
+    padding: 10px 5%;
+    background-color: rgba(26, 26, 26, 0.98);
+    border-bottom: 3px solid #D4AF37; /* خط ذهبي */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    color: #D4AF37;
+    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: #D4AF37;
+}
+
+/* زرار Book Now */
+.book-now {
+    background: linear-gradient(45deg, #D4AF37, #F9D71C);
+    color: #000 !important;
+    padding: 8px 18px;
+    border-radius: 50px; /* شكل بيضاوي شيك */
+    font-size: 0.9rem;
+}
+
+/* العنوان الرئيسي */
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #d4a373;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+/* المحتوى الرئيسي */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(20, 20, 20, 0.8);
+    border-radius: 15px;
+    border: 1px solid rgba(212, 163, 115, 0.3);
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #d4a373;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+}
+
+/* المعرض */
+
+img {
+    width: 85%;
+    max-width: 1000px;
+    display: block;
+    margin: 50px auto;
+    border: 4px solid;
+    /* برواز ذهبي ملكي */
+    border-image: linear-gradient(45deg, #bf953f, #fcf6ba, #b38728) 1;
+    box-shadow: 0 0 40px rgba(184, 134, 11, 0.4);
+    
+    /* أنيميشن الدخول وعوم خفيف */
+    animation: entranceFade 1.5s ease-out, floating 4s ease-in-out infinite;
+    transition: transform 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 60px rgba(255, 215, 0, 0.6);
+}
+@keyframes entranceFade {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes floating {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+/* الفيديو */
+.video-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 2px solid #d4a373;
+}
+
+/* التذييل */
+footer {
+    margin-top: 100px;
+    padding: 40px;
+    border-top: 1px solid #f5c61d;
+    text-align: center;
+    color: var(--gold);
+}
+.book-now {
+    position: relative;
+    overflow: hidden;
+}
+
+.book-now::after {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s;
+    pointer-events: none;
+}
+
+.book-now:hover::after {
+    transform: translate(-50%, -50%) scale(2);
+}
+/* تأثير الاختفاء والظهور */
+.element-hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1);
+}
+
+.element-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* الماوس المخصص */
+.custom-cursor {
+    width: 15px; height: 15px;
+    border: 2px solid #D4AF37;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference; /* بيخلي الماوس لونه يتغير حسب الخلفية */
+    transition: transform 0.2s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.cursor-active {
+    width: 45px; height: 45px;
+    background: rgba(212, 175, 55, 0.1);
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* ستايل شاشة التحميل */
+#preloader {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: #000; display: flex; justify-content: center; align-items: center;
+    z-index: 10000; transition: opacity 0.6s ease;
+}
+
+.gold-spinner {
+    width: 40px; height: 40px;
+    border: 3px solid #1a1a1a;
+    border-top: 3px solid #D4AF37;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+/* --- تنسيق زر المود (Theme Button) --- */
+.theme-btn {
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid #D4AF37;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+    padding: 0;
+    color: #D4AF37;
+}
+
+.theme-btn:hover {
+    background: #D4AF37;
+    color: #000;
+}
+
+/* --- إعدادات الـ Light Mode لصفحة الكنيسة المعلقة --- */
+body.light-mode {
+    background-color: #f5f5f5 !important;
+    background-image: none !important; /* إزالة الخلفية الداكنة في المود الفاتح */
+    color: #1a1a1a !important;
+}
+
+body.light-mode .navbar {
+    background-color: #ffffff !important;
+    border-bottom: 3px solid #D4AF37 !important;
+}
+
+body.light-mode header h1 {
+    color: #8a6d3b !important;
+    text-shadow: none;
+}
+
+body.light-mode main {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid #ddd !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+body.light-mode p {
+    color: #333 !important;
+}
+
+body.light-mode footer {
+    border-top: 1px solid #ccc;
+    color: #8a6d3b;
+}
+
+/* تعديل الماوس المخصص في الوضع الفاتح */
+body.light-mode .custom-cursor {
+    border-color: #1a1a1a;
+}
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }

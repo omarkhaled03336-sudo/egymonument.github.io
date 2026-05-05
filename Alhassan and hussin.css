@@ -1,0 +1,350 @@
+/* 1. استيراد الخطوط */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+/* 2. المتغيرات */
+:root {
+    --gold: #d4af37;
+    --dark-gold: #aa8c2c;
+    --black: #0a0a0a;
+    --soft-black: #1a1a1a;
+    --white: #ffffff;
+}
+
+/* 3. الإعدادات العامة */
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+/* 4. شريط التنقل (Navbar) */
+
+/* 7. تحسينات الـ Navbar (لو محتاج تعديل) */
+.navbar {
+    display: flex;             /* تفعيل وضع المرونة */
+    justify-content: space-between; /* اللوجو في أقصى الشمال واللينكات في أقصى اليمين */
+    align-items: center;       /* سنترة العناصر رأسياً */
+    padding: 15px 40px;        /* مسافة من الأطراف */
+    background-color: #1a1a1a; /* أسود ملكي */
+    border-bottom: 3px solid #D4AF37; /* خط ذهبي فخم من تحت */
+}
+
+/* كلمة اللوجو */
+.logo {
+    color: #D4AF37;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* حاوية اللينكات اللي على اليمين */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* مسافة بين back و book now */
+}
+
+/* كلمة back */
+.back-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #D4AF37;
+}
+
+/* زرار Book Now المتميز */
+.book-now {
+    background: linear-gradient(45deg, #D4AF37, #F9D71C);
+    color: #000;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px 0px #fff;
+    transition: 0.3s;
+}
+
+.book-now:hover {
+    transform: scale(1.05);
+    box-shadow: none;
+    background: #fff;
+}
+/* 1. الإعدادات الأساسية للجسم */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* خلفية سوداء ملكية */
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* 2. شريط التنقل (Taskbar) */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* اللوجو شمال واللينكات يمين خالص */
+    align-items: center;
+    padding: 10px 5%;
+    background-color: rgba(26, 26, 26, 0.98);
+    border-bottom: 3px solid #D4AF37; /* خط ذهبي */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    color: #D4AF37;
+    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: #D4AF37;
+}
+
+/* زرار Book Now */
+.book-now {
+    background: linear-gradient(45deg, #D4AF37, #F9D71C);
+    color: #000 !important;
+    padding: 8px 18px;
+    border-radius: 50px; /* شكل بيضاوي شيك */
+    font-size: 0.9rem;
+}
+
+
+/* 8. الموبايل (عشان الموقع ميبوظش) */
+@media (max-width: 800px) {
+    .detail-flex, .detail-flex.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+    .detail-flex img {
+        width: 100%;
+    }
+}
+
+/* 5. العنوان الذهبي المتوهج */
+header h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 10vw, 4rem);
+    margin: 60px 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 6. المحتوى الرئيسي */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #ccc;
+    max-width: 850px;
+    margin: 0 auto 50px;
+    font-weight: 300;
+}
+
+/* 7. معرض الصور (Gallery) */
+
+img {
+    width: 85%;
+    max-width: 1000px;
+    display: block;
+    margin: 50px auto;
+    border: 4px solid;
+    /* برواز ذهبي ملكي */
+    border-image: linear-gradient(45deg, #bf953f, #fcf6ba, #b38728) 1;
+    box-shadow: 0 0 40px rgba(184, 134, 11, 0.4);
+    
+    /* أنيميشن الدخول وعوم خفيف */
+    animation: entranceFade 1.5s ease-out, floating 4s ease-in-out infinite;
+    transition: transform 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 60px rgba(255, 215, 0, 0.6);
+}
+@keyframes entranceFade {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes floating {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+
+/* 8. الفيديو */
+.video-container {
+    margin: 60px 0;
+    padding: 20px;
+    background: var(--soft-black);
+    border-radius: 20px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* 9. الفوتر */
+footer {
+    margin-top: 100px;
+    padding: 40px;
+    border-top: 1px solid #f5c61d;
+    text-align: center;
+    color: var(--gold);
+}
+.book-now {
+    position: relative;
+    overflow: hidden;
+}
+
+.book-now::after {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s;
+    pointer-events: none;
+}
+
+.book-now:hover::after {
+    transform: translate(-50%, -50%) scale(2);
+}
+/* تأثير الاختفاء والظهور */
+.element-hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1);
+}
+
+.element-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* الماوس المخصص */
+.custom-cursor {
+    width: 15px; height: 15px;
+    border: 2px solid #D4AF37;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference; /* بيخلي الماوس لونه يتغير حسب الخلفية */
+    transition: transform 0.2s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.cursor-active {
+    width: 45px; height: 45px;
+    background: rgba(212, 175, 55, 0.1);
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* ستايل شاشة التحميل */
+#preloader {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: #000; display: flex; justify-content: center; align-items: center;
+    z-index: 10000; transition: opacity 0.6s ease;
+}
+
+.gold-spinner {
+    width: 40px; height: 40px;
+    border: 3px solid #1a1a1a;
+    border-top: 3px solid #D4AF37;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+/* تنسيق الزرار عشان ميبوظش الـ Navbar */
+.theme-btn {
+    background: transparent;
+    border: 1px solid #D4AF37;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D4AF37;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    background: #D4AF37;
+    color: #000;
+}
+
+/* --- أكواد الـ Light Mode --- */
+body.light-mode {
+    background-color: #fcfcfc !important;
+    color: #1a1a1a !important;
+}
+
+body.light-mode .navbar {
+    background-color: #ffffff !important;
+    border-bottom: 3px solid #D4AF37 !important;
+}
+
+body.light-mode header h1 {
+    background: linear-gradient(to right, #8a6d3b, #d4af37, #8a6d3b);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+body.light-mode .description {
+    background: rgba(0,0,0,0.05) !important;
+    color: #333 !important;
+}
+
+body.light-mode footer {
+    border-top: 1px solid #ccc;
+    color: #8a6d3b;
+}
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
