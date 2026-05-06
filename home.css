@@ -1,0 +1,505 @@
+/* تنسيق التاكس بار */
+.navbar {
+    display: flex;             /* تفعيل وضع المرونة */
+    justify-content: space-between; /* اللوجو في أقصى الشمال واللينكات في أقصى اليمين */
+    align-items: center;       /* سنترة العناصر رأسياً */
+    padding: 15px 40px;        /* مسافة من الأطراف */
+    background-color: #1a1a1a; /* أسود ملكي */
+    border-bottom: 3px solid #D4AF37; /* خط ذهبي فخم من تحت */
+}
+
+/* كلمة اللوجو */
+.logo {
+    color: #D4AF37;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* حاوية اللينكات اللي على اليمين */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* مسافة بين back و book now */
+}
+
+/* كلمة back */
+.back-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #D4AF37;
+}
+
+/* زرار Book Now المتميز */
+.book-now {
+    background: linear-gradient(45deg, #D4AF37, #F9D71C);
+    color: #000;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px 0px #fff;
+    transition: 0.3s;
+}
+
+.book-now:hover {
+    transform: scale(1.05);
+    box-shadow: none;
+    background: #fff;
+}
+/* 1. الإعدادات الأساسية للجسم */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* خلفية سوداء ملكية */
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* 2. شريط التنقل (Taskbar) */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* اللوجو شمال واللينكات يمين خالص */
+    align-items: center;
+    padding: 10px 5%;
+    background-color: rgba(26, 26, 26, 0.98);
+    border-bottom: 3px solid #D4AF37; /* خط ذهبي */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    color: #D4AF37;
+    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: #D4AF37;
+}
+
+/* زرار Book Now */
+.book-now {
+    background: linear-gradient(45deg, #D4AF37, #F9D71C);
+    color: #000 !important;
+    padding: 8px 18px;
+    border-radius: 50px; /* شكل بيضاوي شيك */
+    font-size: 0.9rem;
+}
+
+/* 3. سكشن الكلام اللي فوق (Intro) */
+.intro-section {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.intro-section h2 {
+    color: #D4AF37;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.intro-section p {
+    color: #bbb;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* 4. تنسيق الـ Fieldset (الحاويات الكبيرة) */
+.category-section {
+    border: 2px solid #D4AF37;
+    border-radius: 15px;
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 1150px;
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+legend {
+    color: #D4AF37;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+/* 5. نظام الشبكة (الزتونة اللي بتخلي الصور 2 و 2) */
+.photos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* عمودين متساويين */
+    gap: 25px; /* مسافة بين الكروت */
+}
+
+/* 6. كارت الصورة (The Card) */
+.photo-card {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+    transform: translateY(-8px);
+    border-color: #D4AF37;
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+}
+
+/* 7. ضبط الصور (عشان تمنع التمطيط وتوحد الطول) */
+.photo-card img {
+    width: 100%;
+    height: 320px;         /* طول موحد للـ 8 صور */
+    object-fit: cover;     /* أهم خاصية: بتقص الزيادة وبتحافظ على الأبعاد */
+    object-position: center; 
+    display: block;
+}
+
+/* العناوين تحت الصور */
+.photo-card h3 {
+    color: #D4AF37;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    font-size: 1.1rem;
+    background: #1a1a1a;
+    border-top: 1px solid #333;
+}
+
+/* 8. متجاوب مع الموبايل */
+@media (max-width: 768px) {
+    .photos-grid {
+        grid-template-columns: 1fr; /* في الموبايل الصور تطلع تحت بعض */
+    }
+    .navbar {
+        padding: 15px;
+    }
+}
+/* حركة الظهور التدريجي من الأسفل */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* حركة نبض خفيفة للإطار الذهبي */
+@keyframes goldGlow {
+    0% { box-shadow: 0 0 5px rgba(212, 175, 55, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.6); }
+    100% { box-shadow: 0 0 5px rgba(212, 175, 55, 0.2); }
+}
+/* 1. تعريف الحركة: ظهور + طلوع لفوق */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 2. تطبيق الحركة على الكروت */
+.photo-card {
+    /* التأكد إن العنصر يبدأ مخفي قبل الأنميشن */
+    opacity: 0; 
+    
+    /* تنفيذ الأنميشن */
+    /* forwards: بتخلي العنصر يثبت على الحالة النهائية (opacity: 1) وميختفيش تاني */
+    animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* 3. التأخير الزمني (الترتيب) */
+/* تأكد إن الأرقام هنا ماشية مع ترتيب الـ 4 كروت اللي عندك */
+.photo-card:nth-child(1) { animation-delay: 0.2s; }
+.photo-card:nth-child(2) { animation-delay: 0.4s; }
+.photo-card:nth-child(3) { animation-delay: 0.6s; }
+.photo-card:nth-child(4) { animation-delay: 0.8s; }
+
+/* 4. تأثير الـ Hover (التفاعل) */
+.photo-card:hover {
+    transform: translateY(-10px) !important; /* الـ !important هنا عشان يغلب حركة الـ fadeInUp بعد ما تخلص */
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
+    border-color: #D4AF37;
+}
+
+/* 5. زووم خفيف للصورة عند الوقوف عليها */
+.photo-card:hover img {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+.book-now {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.book-now:hover {
+    letter-spacing: 2px; /* الحروف تبعد عن بعضها شوية */
+    box-shadow: 0 0 15px #D4AF37;
+}
+/* 1. تعريف الحركة */
+@keyframes paragraphReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* يبدأ تحت مكانه بـ 20px */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* يوصل لمكانه الطبيعي */
+    }
+}
+
+/* 2. تطبيق الحركة على البرجراف */
+/* افترضنا إن البرجراف جوه كلاس اسمه intro-text */
+.intro-section p {
+    opacity: 0; /* يبدأ مخفي */
+    animation: paragraphReveal 1.5s ease-out forwards;
+    animation-delay: 0.5s; /* تأخير بسيط عشان يظهر بعد العنوان */
+    line-height: 1.8; /* لزيادة وضوح القراءة */
+    transition: color 0.3s ease; /* تمهيد لتأثير الـ hover */
+}
+
+/* 3. حركة "اللمعة" عند الوقوف عليه بالماوس (اختياري بس رايق) */
+.intro-section p:hover {
+    color: #D4AF37; /* يقلب ذهبي لما تقف عليه */
+    cursor: default;
+}
+/* 1. تعريف حركة الدخول (ظهور + تكبير خفيف) */
+@keyframes smoothShow {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+        filter: blur(10px); /* تأثير ضبابي في البداية بيدي شكل سينمائي */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        filter: blur(0);
+    }
+}
+
+/* 2. تطبيق الحركة على البرجراف */
+.intro-section p {
+    color: #bbb;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 850px;
+    margin: 20px auto;
+    text-align: center;
+
+    /* تفعيل الأنميشن */
+    animation: smoothShow 2s ease-out forwards;
+    
+    /* دي مهمة جداً عشان الأنميشن يستنى شوية قبل ما يبدأ */
+    animation-delay: 0.3s; 
+    
+    /* التأكد إن البرجراف يفضل ظاهر بعد ما الحركة تخلص */
+    backface-visibility: hidden;
+}
+
+/* 3. حركة "النبض" الذهبية الخفيفة لما تقف بالماوس */
+.intro-section p:hover {
+    color: #D4AF37;
+    transition: 0.5s;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+.book-now {
+    position: relative;
+    overflow: hidden;
+}
+
+.book-now::after {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s;
+    pointer-events: none;
+}
+
+.book-now:hover::after {
+    transform: translate(-50%, -50%) scale(2);
+}
+/* تأثير الاختفاء والظهور */
+.element-hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1);
+}
+
+.element-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* الماوس المخصص */
+.custom-cursor {
+    width: 15px; height: 15px;
+    border: 2px solid #D4AF37;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference; /* بيخلي الماوس لونه يتغير حسب الخلفية */
+    transition: transform 0.2s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.cursor-active {
+    width: 45px; height: 45px;
+    background: rgba(212, 175, 55, 0.1);
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* ستايل شاشة التحميل */
+#preloader {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: #000; display: flex; justify-content: center; align-items: center;
+    z-index: 10000; transition: opacity 0.6s ease;
+}
+
+.gold-spinner {
+    width: 40px; height: 40px;
+    border: 3px solid #1a1a1a;
+    border-top: 3px solid #D4AF37;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+/* 1. تعريف الألوان المتغيرة */
+:root {
+    --bg-color: #121212;      /* Dark Mode Default */
+    --text-color: #ffffff;
+    --nav-bg: rgba(26, 26, 26, 0.98);
+    --card-bg: #1e1e1e;
+    --secondary-text: #bbb;
+}
+
+/* 2. حالة الـ Light Mode */
+body.light-mode {
+    --bg-color: #f4f4f4;      /* خلفية فاتحة */
+    --text-color: #1a1a1a;    /* نصوص غامقة */
+    --nav-bg: rgba(255, 255, 255, 0.95);
+    --card-bg: #ffffff;
+    --secondary-text: #444;
+}
+
+/* 3. تطبيق المتغيرات على العناصر اللي عندك */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.4s, color 0.4s; /* انتقال ناعم */
+}
+
+.navbar { background-color: var(--nav-bg) !important; }
+.photo-card { background: var(--card-bg) !important; }
+.intro-section p { color: var(--secondary-text) !important; }
+.nav-item, .back-link { color: var(--text-color) !important; }
+
+/* 4. تنسيق زرار التحويل */
+.theme-btn {
+    background: none;
+    border: 2px solid #D4AF37;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-btn:hover {
+    background: rgba(212, 175, 55, 0.2);
+    transform: rotate(15deg);
+}
+/* زر الدخول الذهبي المطور */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(45deg, #b8860b, #d4af37, #f9d71c); /* تدرج ثلاثي للذهب */
+    background-size: 200% auto; /* لتفعيل أنيميشن التدرج */
+    border: none;
+    border-radius: 12px; /* زوايا أكثر نعومة */
+    color: #000;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* ضروري لتأثير اللمعة */
+    transition: all 0.4s ease;
+    font-family: 'Cairo', sans-serif;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+/* تأثير اللمعة المتحركة (Shine Effect) */
+.login-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    transition: all 0.6s;
+}
+
+/* حركة الزر عند التفاعل */
+.login-btn:hover {
+    background-position: right center; /* تحريك التدرج الذهبي */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+    letter-spacing: 1px; /* تباعد بسيط للحروف يعطي فخامة */
+}
+
+.login-btn:hover::before {
+    left: 150%; /* تحريك اللمعة من اليسار لليمين */
+}
+
+.login-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
