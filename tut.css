@@ -1,13 +1,13 @@
 .navbar {
-    display: flex;             /* تفعيل وضع المرونة */
+    display: flex;            
     justify-content: space-between; /* اللوجو في أقصى الشمال واللينكات في أقصى اليمين */
     align-items: center;       /* سنترة العناصر رأسياً */
     padding: 15px 40px;        /* مسافة من الأطراف */
-    background-color: #1a1a1a; /* أسود ملكي */
-    border-bottom: 3px solid #D4AF37; /* خط ذهبي فخم من تحت */
+    background-color: #1a1a1a; 
+    border-bottom: 3px solid #D4AF37; 
 }
 
-/* كلمة اللوجو */
+
 .logo {
     color: #D4AF37;
     font-size: 24px;
@@ -21,7 +21,7 @@
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 30px; /* مسافة بين back و book now */
+    gap: 30px; 
 }
 
 /* كلمة back */
@@ -61,7 +61,7 @@
     align-items: center;
     padding: 10px 5%;
     background-color: rgba(26, 26, 26, 0.98);
-    border-bottom: 3px solid #D4AF37; /* خط ذهبي */
+    border-bottom: 3px solid #D4AF37; 
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -97,7 +97,7 @@
     background: linear-gradient(45deg, #D4AF37, #F9D71C);
     color: #000 !important;
     padding: 8px 18px;
-    border-radius: 50px; /* شكل بيضاوي شيك */
+    border-radius: 50px;
     font-size: 0.9rem;
 }
 
@@ -131,7 +131,7 @@ body {
     overflow-x: hidden;
 }
 
-/* زر الرجوع - تصميم عائم وأنيق */
+
 .back-btn {
     padding: 30px 5%;
 }
@@ -151,10 +151,10 @@ body {
     background-color: var(--gold);
     color: var(--black);
     box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
-    transform: translateX(-5px); /* حركة خفيفة لجهة اليمين/اليسار حسب الاتجاه */
+    transform: translateX(-5px); 
 }
 
-/* العنوان الرئيسي - تأثير ذهبي متدرج */
+
 .content {
     text-align: center;
     margin: 60px 0;
@@ -196,7 +196,7 @@ body {
 .description {
     width: 85%;
     max-width: 850px;
-    margin: -50px auto 40px; /* تداخل بسيط مع الصورة لإعطاء عمق */
+    margin: -50px auto 40px; 
     position: relative;
     z-index: 2;
     background: rgba(26, 26, 26, 0.9);
@@ -393,8 +393,7 @@ footer {
     box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
 }
 
-/* إعدادات الـ Light Mode الإجبارية لجميع العناصر */
-/* تنسيق الـ Navbar الأساسي */
+
 .navbar {
     display: flex;
     justify-content: space-between;
