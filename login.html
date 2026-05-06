@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - Egypt Heritage</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h1 class="lang" data-ar="تسجيل الدخول" data-en="Login">Login</h1>
+            <p class="lang" data-ar="اكتشف جمال مصر معنا" data-en="Discover the beauty of Egypt with us">
+                Discover the beauty of Egypt with us
+            </p>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username" class="lang" data-ar="اسم المستخدم أو البريد الإلكتروني" data-en="Username or Email">
+                     username or email
+                    </label>
+                    <input type="text" id="username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password" class="lang" data-ar="كلمة المرور" data-en="Password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember" class="lang" data-ar="تذكرني" data-en="Remember me">Remember me</label>
+                </div>
+
+                <button type="submit" class="login-btn lang" data-ar="دخول" data-en="Login">Login</button>
+            </form>
+
+            <div class="footer-links">
+                <a href="#" class="lang" data-ar="نسيت كلمة المرور؟" data-en="Forgot Password?">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
