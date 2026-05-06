@@ -1,8 +1,8 @@
 
 fieldset {
-    border: 2px solid #D4AF37; /* إطار ذهبي */
+    border: 2px solid #D4AF37; 
     border-radius: 10px;
-    background-color: rgba(255, 248, 220, 0.6); /* لون كريمي خفيف شفاف لسهولة القراءة */
+    background-color: rgba(255, 248, 220, 0.6);
     padding: 20px;
     max-width: 500px;
     margin: 20px auto;
@@ -37,7 +37,7 @@ input:focus {
 
 /* تنسيق العناوين بجانب الخانات */
 label {
-    color: #3e2723; /* بني داكن جداً */
+    color: #3e2723; 
     font-weight: bold;
     display: block;
     margin-top: 10px;
@@ -47,17 +47,17 @@ label {
     margin: 20px auto;    /* التوسيط في نص الفورم */
     
     /* الحجم الصغير والشكل البيضاوي */
-    width: 120px;         /* عرض معقول */
-    height: 45px;         /* طول قليل عشان يبقى بيضاوي */
-    border-radius: 50px;  /* قيمة كبيرة عشان الحواف تكون دائرية تماماً */
+    width: 120px;         
+    height: 45px;        
+    border-radius: 50px;
     
     /* التنسيقات الداخلية */
     padding: 0;
-    font-size: 0.8rem;    /* صغر الخط شوية عشان يليق مع حجم الزرار */
+    font-size: 0.8rem;    
     letter-spacing: 1px;
     cursor: pointer;
     
-    /* الطابع الفرعوني الذهبي */
+    
     background: linear-gradient(45deg, #D4AF37, #F9D71C);
     color: #000;
     font-weight: bold;
@@ -107,19 +107,19 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed; /* الخلفية تثبت والكلام يتحرك */
     
-    /* 2. إضافة طبقة تظليل (Overlay) فخمة */
+    
     background-color: rgba(0, 0, 0, 0.4); /* طبقة سوداء خفيفة بـ 40% شفافية */
-    background-blend-mode: multiply;    /* خلط الألوان عشان التظليل يندمج مع الصورة */
+    background-blend-mode: multiply;    
 }
 
-/* تعديل بسيط على تنسيق الـ fieldset عشان الـ Form يظهر صح فوق الخلفية الغامقة */
+
 fieldset {
-    border: 2px solid #D4AF37;          /* برواز ذهبي واضح */
+    border: 2px solid #D4AF37;          
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.9); /* خلفية بيضاء تقريباً عشان الكلام يبان */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* ظل قوي عشان يبرز الـ Form */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
     max-width: 500px;
-    margin: 50px auto;                  /* توسيط ومسافة من فوق */
+    margin: 50px auto;                  
     padding: 30px;
 }
 footer {
@@ -129,7 +129,7 @@ footer {
     text-align: center;
     color: var(--gold);
 }
-/* تأثير الاختفاء والظهور */
+
 .element-hidden {
     opacity: 0;
     transform: translateY(40px);
