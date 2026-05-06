@@ -1,15 +1,14 @@
 
-/* 7. تحسينات الـ Navbar (لو محتاج تعديل) */
 .navbar {
-    display: flex;             /* تفعيل وضع المرونة */
-    justify-content: space-between; /* اللوجو في أقصى الشمال واللينكات في أقصى اليمين */
-    align-items: center;       /* سنترة العناصر رأسياً */
-    padding: 15px 40px;        /* مسافة من الأطراف */
-    background-color: #1a1a1a; /* أسود ملكي */
-    border-bottom: 3px solid #D4AF37; /* خط ذهبي فخم من تحت */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;      
+    padding: 15px 40px;     
+    background-color: #1a1a1a;
+    border-bottom: 3px solid #D4AF37;
 }
 
-/* كلمة اللوجو */
+
 .logo {
     color: #D4AF37;
     font-size: 24px;
@@ -18,14 +17,14 @@
     letter-spacing: 2px;
 }
 
-/* حاوية اللينكات اللي على اليمين */
+
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 30px; /* مسافة بين back و book now */
+    gap: 30px; 
 }
 
-/* كلمة back */
+
 .back-link {
     color: #ffffff;
     text-decoration: none;
@@ -37,7 +36,7 @@
     color: #D4AF37;
 }
 
-/* زرار Book Now المتميز */
+
 .book-now {
     background: linear-gradient(45deg, #D4AF37, #F9D71C);
     color: #000;
@@ -54,24 +53,24 @@
     box-shadow: none;
     background: #fff;
 }
-/* 1. الإعدادات الأساسية للجسم */
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212; /* خلفية سوداء ملكية */
+    background-color: #121212;
     color: #ffffff;
     overflow-x: hidden;
 }
 
-/* 2. شريط التنقل (Taskbar) */
+
 .navbar {
     display: flex;
-    justify-content: space-between; /* اللوجو شمال واللينكات يمين خالص */
+    justify-content: space-between; 
     align-items: center;
     padding: 10px 5%;
     background-color: rgba(26, 26, 26, 0.98);
-    border-bottom: 3px solid #D4AF37; /* خط ذهبي */
+    border-bottom: 3px solid #D4AF37;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -102,17 +101,15 @@ body {
     color: #D4AF37;
 }
 
-/* زرار Book Now */
 .book-now {
     background: linear-gradient(45deg, #D4AF37, #F9D71C);
     color: #000 !important;
     padding: 8px 18px;
-    border-radius: 50px; /* شكل بيضاوي شيك */
+    border-radius: 50px;
     font-size: 0.9rem;
 }
 
 
-/* 8. الموبايل (عشان الموقع ميبوظش) */
 @media (max-width: 800px) {
     .detail-flex, .detail-flex.reverse {
         flex-direction: column;
@@ -122,17 +119,17 @@ body {
         width: 100%;
     }
 }
-/* 1. الإعدادات العامة للملف */
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212; /* نفس لون صفحة الهوم */
+    background-color: #121212; 
     color: #ffffff;
     overflow-x: hidden;
 }
 
-/* 2. الأنميشن (السر في الحركات الرايقة) */
+
 @keyframes blurReveal {
     0% {
         opacity: 0;
@@ -169,10 +166,9 @@ header h1 {
     -webkit-text-fill-color: transparent;
 }
 
-/* --- الإعدادات العامة للصفحة --- */
 body {
     background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
-    color: #f4e4bc; /* لون ورق البردي */
+    color: #f4e4bc; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -180,18 +176,17 @@ body {
     overflow-x: hidden;
 }
 
-/* --- تنسيق الصورة الكبيرة (The Hero Image) --- */
 img {
     width: 85%;
     max-width: 1000px;
     display: block;
     margin: 50px auto;
     border: 4px solid;
-    /* برواز ذهبي ملكي */
+
     border-image: linear-gradient(45deg, #bf953f, #fcf6ba, #b38728) 1;
     box-shadow: 0 0 40px rgba(184, 134, 11, 0.4);
     
-    /* أنيميشن الدخول وعوم خفيف */
+
     animation: entranceFade 1.5s ease-out, floating 4s ease-in-out infinite;
     transition: transform 0.5s ease;
 }
@@ -201,13 +196,12 @@ img:hover {
     box-shadow: 0 0 60px rgba(255, 215, 0, 0.6);
 }
 
-/* --- تنسيق النص (Description Section) --- */
 p {
     max-width: 800px;
     margin: 60px auto;
     text-align: justify;
     font-size: 1.25rem;
-    background: rgba(184, 134, 11, 0.07); /* خلفية ذهبية شفافة جداً */
+    background: rgba(184, 134, 11, 0.07);
     padding: 40px;
     border-radius: 15px;
     border-left: 4px solid #bf953f;
@@ -228,7 +222,7 @@ p::first-letter {
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 
-/* تأثير التوهج عند الوقوف على النص */
+
 p:hover {
     color: #ffffff;
     text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
@@ -236,9 +230,6 @@ p:hover {
 }
 
 
-/* --- Animations (الأنيميشن) --- */
-
-/* ظهور تدريجي مع تحرك من الأسفل */
 @keyframes slideUp {
     from {
         opacity: 0;
@@ -251,7 +242,7 @@ p:hover {
         filter: blur(0);
     }
 }
-/* --- تنسيق الفيديو (صغير، متوسطن، ومعدول) --- */
+
 .video-container {
     margin: 50px 0;
     padding: 20px;
@@ -267,7 +258,7 @@ video {
     outline: none;
 }
 
-/* ظهور الصورة */
+
 @keyframes entranceFade {
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
@@ -278,7 +269,6 @@ video {
     50% { transform: translateY(-15px); }
 }
 
-/* --- Responsive (للموبايل) --- */
 @media (max-width: 768px) {
     p {
         width: 90%;
